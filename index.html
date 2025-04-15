@@ -1,93 +1,88 @@
 <!DOCTYPE html>
-
-<html dir="rtl" lang="ar">
+<html lang="ar">
 <head>
-<meta charset="utf-8"/>
-<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
-<meta content="منتج أفلام سينمائية بالمملكة العربية السعودية" name="description"/>
-<title>Mohamed Suliman Elkholy</title>
-<link href="https://fonts.googleapis.com/css2?family=Cairo:wght@400;700&amp;display=swap" rel="stylesheet"/>
-<style>
-    body {
-      margin: 0;
-      font-family: 'Cairo', sans-serif;
-      background-color: #f9f9f9;
-      color: #222;
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Mohamed Suliman Elkholy</title>
+  <link rel="stylesheet" href="style.css">
+  <script>
+    function toggleLanguage() {
+      const arabicElements = document.querySelectorAll('[lang="ar"]');
+      const englishElements = document.querySelectorAll('[lang="en"]');
+      const isArabicVisible = arabicElements[0].style.display !== 'none';
+      arabicElements.forEach(el => el.style.display = isArabicVisible ? 'none' : 'block');
+      englishElements.forEach(el => el.style.display = isArabicVisible ? 'block' : 'none');
     }
-    header {
-      background-color: #000;
-      color: #fff;
-      text-align: center;
-      padding: 40px 20px;
-    }
-    header img {
-      width: 160px;
-      height: 160px;
-      border-radius: 50%;
-      border: 4px solid #fff;
-      margin-bottom: 20px;
-    }
-    header h1 {
-      margin: 0;
-      font-size: 2.5em;
-    }
-    header p {
-      font-size: 1.2em;
-      margin: 10px 0 0;
-    }
-    section {
-      padding: 40px 20px;
-      max-width: 800px;
-      margin: auto;
-    }
-    .gallery img {
-      width: 100%;
-      border-radius: 12px;
-      margin-bottom: 20px;
-    }
-    .links a {
-      display: block;
-      margin-bottom: 10px;
-      color: #0056b3;
-      text-decoration: none;
-    }
-    footer {
-      text-align: center;
-      padding: 20px;
-      background: #eee;
-      font-size: 0.9em;
-    }
-  </style>
+  </script>
 </head>
-<body><a href="en.html" style="position:absolute;top:20px;right:20px;background:#000;color:#fff;padding:8px 12px;border-radius:8px;text-decoration:none;font-family:sans-serif;">English</a>
-<header>
-<img alt="Mohamed Suliman Elkholy" src="profile.jpg"/>
-<h1>Mohamed Suliman Elkholy</h1>
-<p>منتج أفلام سينمائية بالمملكة العربية السعودية</p>
-</header>
-<section>
-<h2>من أنا</h2>
-<p>
-      محمد سليمان الخولي، منتج أفلام وثائقية وسينمائية مقيم في المملكة العربية السعودية، يتمتع بخبرة تفوق 10 سنوات في مجال الإنتاج الفني. من أبرز أعماله الوثائقية "هورايزن" المتوفر على نتفلكس، و"حجة الرسول" الذي نال بفضله شهادة شكر من معالي وزير الإعلام السعودي، بالإضافة لفيلم "سوار" المستوحى من قصة حقيقية وعُرض لأول مرة بمهرجان الأفلام السعودية.
+<body>
+  <header>
+    <h1>محمد سليمان الخولي</h1>
+    <button onclick="toggleLanguage()">تبديل اللغة | Switch Language</button>
+    <p lang="ar">
+      منتج أفلام سينمائية مقيم في المملكة العربية السعودية، بخبرة تتجاوز 10 سنوات في مجال الإنتاج الفني. له سجل حافل من الأعمال الفنية والوثائقية الحائزة على جوائز محلية وعالمية، من أبرزها فيلم "هورايزن" على نتفلكس، وفيلم "مرحلة صعبة" الحاصل على شهادة شكر من وزير الإعلام السابق ماجد القصبي، وفيلم "حجة الرسول"، وفيلم "سوار" المستوحى من قصة حقيقية، إلى جانب "فخر السويدي"، و"ليل نهار". له أيضًا إسهامات في التلفزيون والإعلانات، منها مسلسل "أوريم"، وبرنامج "كرام" على MBC.
     </p>
-</section>
-<section class="gallery">
-<h2>معرض الصور</h2>
-<img alt="مهرجان الأفلام السعودية" src="festival.jpg"/>
-<img alt="كواليس التصوير" src="onset.jpg"/>
-</section>
-<section>
-<h2>روابط مهمة</h2>
-<div class="links">
-<a href="https://vimeo.com/user80903217" target="_blank">أعمالي على Vimeo</a>
-<a href="https://www.imdb.com/name/nm13820963/?ref_=ext_shr_lnk" target="_blank">صفحتي على IMDb</a>
-<a href="https://www.instagram.com/moh.suliman777" target="_blank">انستغرام</a>
-<a href="https://x.com/netflixmena/status/1742863443890258065" target="_blank">فيلم هورايزن - نتفلكس</a>
-<a href="https://x.com/filmalula/status/1759919521391898770" target="_blank">فيلم سوار - مهرجان العُلا</a>
-</div>
-</section>
-<footer>
-    © 2025 Mohamed Suliman Elkholy
+    <p lang="en" style="display: none">
+      Mohamed Suliman Elkholy is a Saudi-based Egyptian film producer with over a decade of experience in the industry. His portfolio includes critically acclaimed and award-winning films such as "Horizon" (on Netflix), "A Difficult Stage" (recognized by the former Minister of Media Majid Al Qasabi), "The Prophet's Pilgrimage", "Sewar" (inspired by a true story), "Pride of Al-Suwaidi", and "Day and Night". He has also contributed to television and advertising, including the series "Oreem" and MBC’s show "Karam".
+    </p>
+  </header>
+
+  <section>
+    <h2>الأعمال</h2>
+    <ul>
+      <li>مسلسل أوريم – الموسم الأول (2020)</li>
+      <li>برنامج كرام – الموسم الأول على MBC (2021)</li>
+      <li>فيلم مرحلة صعبة (2020)</li>
+      <li>فيلم هورايزن (2022)</li>
+      <li>فيلم حجة الرسول (2022)</li>
+      <li>فيلم سوار (2023)</li>
+      <li>فيلم فخر السويدي (2023)</li>
+      <li>فيلم ليل نهار (2024)</li>
+    </ul>
+  </section>
+
+  <section>
+    <h2>🏆 الجوائز | Awards</h2>
+    <div lang="ar">
+      <h3>فيلم هورايزن</h3>
+      <ul>
+        <li>جائزتان بلاتينيتان - MUSE Creative Awards <img src="https://museaward.com/images/logo.png" alt="MUSE Logo" height="30"></li>
+        <li>جائزتان ذهبيتان - MUSE Creative Awards</li>
+        <li>جائزتان فضيتان - MUSE Creative Awards</li>
+        <li>جائزة شرفية - MUSE Creative Awards</li>
+        <li>جائزة Merit - MUSE Creative Awards</li>
+        <li>جائزة بلاتينية - Hermes Creative Awards <img src="https://hermesawards.com/images/logo.png" alt="Hermes Logo" height="30"></li>
+      </ul>
+    </div>
+    <div lang="en" style="display: none">
+      <h3>Horizon Film</h3>
+      <ul>
+        <li>2 Platinum Awards – MUSE Creative Awards <img src="https://museaward.com/images/logo.png" alt="MUSE Logo" height="30"></li>
+        <li>2 Gold Awards – MUSE Creative Awards</li>
+        <li>2 Silver Awards – MUSE Creative Awards</li>
+        <li>1 Honorable Mention – MUSE Creative Awards</li>
+        <li>1 Merit Award – MUSE Creative Awards</li>
+        <li>1 Platinum Award – Hermes Creative Awards <img src="https://hermesawards.com/images/logo.png" alt="Hermes Logo" height="30"></li>
+      </ul>
+    </div>
+  </section>
+
+  <section>
+    <h2>Gallery | المعرض</h2>
+    <div>
+      <img src="images/profile-main.jpeg" alt="Mohamed Suliman Elkholy">
+      <img src="images/horizon.jpeg" alt="Horizon">
+      <img src="images/fakhr.jpeg" alt="Fakhr Al-Suwaidi">
+      <img src="images/lailnahar.jpeg" alt="Lail Nahar">
+      <img src="images/gallery1.png" alt="Gallery Image 1">
+      <img src="images/gallery2.jpeg" alt="Gallery Image 2">
+      <img src="images/gallery3.jpeg" alt="Gallery Image 3">
+    </div>
+  </section>
+
+  <footer>
+    <p>© 2025 Mohamed Suliman Elkholy</p>
+    <p>Email: mohfilms1@gmail.com</p>
   </footer>
 </body>
 </html>
